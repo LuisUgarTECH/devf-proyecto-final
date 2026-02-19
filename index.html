@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Batman Portfolio | Luis Ugarte</title>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Inter:wght@300;400;500&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/layout.css">
+  <link rel="stylesheet" href="./css/components.css">
+  <link rel="stylesheet" href="./css/effects.css">
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">DC</div>
+
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#hero">Inicio</a></li>
+        <li><a href="#cave">Batcueva</a></li>
+        <li><a href="#projects">Misiones</a></li>
+        <li><a href="#contact">Señal</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section id="hero" class="section hero">
+
+    <div class="parallax-layer background-layer" data-speed="0.2"></div>
+    <div class="parallax-layer trees-layer" data-speed="0.4"></div>
+
+    <div class="hero-content">
+      <h1 class="hero-title">Daniel Chávez</h1>
+      <p class="hero-subtitle">Ing. en Sistemas Computacionales</p>
+      <button class="hero-button" id="enter-cave">
+        Descender a la Baticueva
+      </button>
+    </div>
+
+    <div class="scroll-indicator">
+      <span></span>
+    </div>
+
+  </section>
+
+  <section id="cave" class="section cave">
+
+    <!-- Fondo cueva -->
+    <div class="parallax-layer cave-background-layer" data-speed="0.15"></div>
+
+    <!-- Murciélagos encima -->
+    <div class="parallax-layer bats-layer" data-speed="-0.35"></div>
+
+    <div class="cave-content">
+      <h2 class="section-title">La Batcueva</h2>
+      <p class="section-description">
+        Ingeniero en Sistemas enfocado en desarrollo frontend.
+        Diseño interfaces limpias, funcionales y con buena experiencia de usuario.
+      </p>
+    </div>
+
+  </section>
+
+  <!-- Baticompu -->
+  <section id="projects" class="section projects">
+
+    <h2 class="section-title">Misiones</h2>
+
+    <div class="projects-grid">
+
+      <article class="project-card">
+        <div class="project-screen"></div>
+        <h3>Sistema de Reservaciones</h3>
+        <p>Proyecto completo con selección visual de asientos y simulación de pago.</p>
+      </article>
+
+      <article class="project-card">
+        <div class="project-screen"></div>
+        <h3>Control de Acceso</h3>
+        <p>Frontend desarrollado en entorno empresarial con Angular.</p>
+      </article>
+
+      <article class="project-card">
+        <div class="project-screen"></div>
+        <h3>Registro CAADI</h3>
+        <p>Formulario validado conectado a Firebase para gestión institucional.</p>
+      </article>
+
+    </div>
+
+  </section>
+
+  <!-- Batiseñal -->
+  <section id="contact" class="section contact">
+
+    <div class="signal-light"></div>
+
+    <div class="contact-content">
+      <h2 class="section-title">Activar Señal</h2>
+      <p>Disponible para nuevos proyectos y oportunidades.</p>
+      <button class="contact-button">Contactar</button>
+    </div>
+
+  </section>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <p>© 2026 Portfolio Luis Ugarte</p>
+      <div class="footer-links">
+        <a href="https://github.com/LuisUgarTECH" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/LuisUgarTECH" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./js/parallax.js"></script>
+  <script src="./js/main.js"></script>
+
+</body>
+
+</html>
