@@ -226,6 +226,17 @@ button:hover {
   cursor: pointer;
 }
 
+.project-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 8px 14px;
+  background: #f5c518;
+  color: black;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
 @keyframes scrollAnim {
   0% {
     opacity: 1;
