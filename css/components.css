@@ -120,6 +120,112 @@ button:hover {
   transition: opacity 0.8s ease;
 }
 
+.batmodal {
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(circle at center top, #111 0%, #000 70%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+  z-index: 3000;
+}
+
+.batmodal.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.signal-beam {
+  position: absolute;
+  top: -20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 600px;
+  height: 1000px;
+  background: radial-gradient(ellipse at top,
+      rgba(245, 197, 24, 0.5) 0%,
+      rgba(245, 197, 24, 0.2) 30%,
+      rgba(245, 197, 24, 0.05) 50%,
+      transparent 70%);
+  filter: blur(40px);
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.batlight {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.bat-logo {
+  width: 120px;
+  opacity: 0.9;
+  filter: drop-shadow(0 0 15px rgba(255, 255, 150, 0.8));
+}
+
+.batmodal.active .signal-beam {
+  opacity: 1;
+}
+
+.bat-form-container {
+  position: relative;
+  margin-top: 200px;
+  width: 90%;
+  max-width: 450px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.batmodal.active .bat-form-container {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.bat-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.bat-form input,
+.bat-form textarea {
+  padding: 0.8rem;
+  background: #111;
+  border: 1px solid #333;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+}
+
+.bat-form input:focus,
+.bat-form textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.close-modal {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  background: var(--accent);
+  color: #000;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  cursor: pointer;
+}
+
 @keyframes scrollAnim {
   0% {
     opacity: 1;

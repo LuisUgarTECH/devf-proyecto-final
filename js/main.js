@@ -54,3 +54,30 @@ const navLinks = document.getElementById("nav-links");
 hamburger.addEventListener("click", () => {
   navLinks.classList.toggle("active");
 });
+
+// Sección de contacto
+const contactBtn = document.querySelector(".contact-button");
+const batModal = document.getElementById("batmodal");
+const closeModal = document.getElementById("close-modal");
+
+function openModal() {
+  batModal.classList.add("active");
+  document.body.style.overflow = "hidden";
+}
+
+function closeModalSmooth() {
+  batModal.classList.remove("active");
+
+  setTimeout(() => {
+    document.body.style.overflow = "";
+  }, 500);
+}
+
+contactBtn.addEventListener("click", openModal);
+closeModal.addEventListener("click", closeModalSmooth);
+
+batModal.addEventListener("click", (e) => {
+  if (e.target === batModal) {
+    closeModalSmooth();
+  }
+});

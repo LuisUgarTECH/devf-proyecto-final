@@ -29,7 +29,7 @@
 
       <ul class="nav-links" id="nav-links">
         <li><a href="#hero">Inicio</a></li>
-        <li><a href="#cave">Batcueva</a></li>
+        <li><a href="#cave">Baticueva</a></li>
         <li><a href="#projects">Misiones</a></li>
         <li><a href="#contact">Señal</a></li>
       </ul>
@@ -45,7 +45,7 @@
       <h1 class="hero-title">Daniel Chávez</h1>
       <p class="hero-subtitle">Ing. en Sistemas Computacionales</p>
       <button class="hero-button" id="enter-cave">
-        Descender a la Baticueva
+        Explorar Baticueva
       </button>
     </div>
 
@@ -64,10 +64,10 @@
     <div class="parallax-layer bats-layer" data-speed="-0.35"></div>
 
     <div class="cave-content">
-      <h2 class="section-title">La Batcueva</h2>
+      <h2 class="section-title">Baticueva</h2>
       <p class="section-description">
         Ingeniero en Sistemas enfocado en desarrollo frontend.
-        Diseño interfaces limpias, funcionales y con buena experiencia de usuario.
+        Diseño interfaces limpias, funcionales y con gran enfoque en experiencia de usuario.
       </p>
     </div>
 
@@ -76,19 +76,19 @@
   <!-- Baticompu -->
   <section id="projects" class="section projects">
 
-    <h2 class="section-title">Misiones</h2>
+    <h2 class="section-title">Misiones Completadas</h2>
 
     <div class="projects-grid">
 
       <article class="project-card">
         <div class="project-screen"></div>
-        <h3>Sistema de Reservaciones</h3>
+        <h3>Sistema de Reservaciones de autobús</h3>
         <p>Proyecto completo con selección visual de asientos y simulación de pago.</p>
       </article>
 
       <article class="project-card">
         <div class="project-screen"></div>
-        <h3>Control de Acceso</h3>
+        <h3>Control de Accesos para invitados, proveedores y activos</h3>
         <p>Frontend desarrollado en entorno empresarial con Angular.</p>
       </article>
 
@@ -124,6 +124,30 @@
       </div>
     </div>
   </footer>
+
+  <div class="batmodal" id="batmodal">
+
+    <div class="signal-beam"></div>
+
+    <div class="batlight">
+      <img src="assets/logo-bat.png" alt="Logo" class="bat-logo">
+    </div>
+
+    <div class="bat-form-container">
+      <form class="bat-form">
+        <h2>Activar Señal</h2>
+
+        <input type="text" placeholder="Nombre" required>
+        <input type="email" placeholder="Email" required>
+        <textarea placeholder="Comentario" rows="4" required></textarea>
+
+        <button type="submit">Enviar Mensaje</button>
+      </form>
+
+      <button class="close-modal" id="close-modal">✕</button>
+    </div>
+
+  </div>
 
   <script src="./js/parallax.js"></script>
   <script src="./js/main.js"></script>
